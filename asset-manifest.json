@@ -10,7 +10,4 @@
     "static/css/main.1e13b45a.css",
     "static/js/main.e9bdcbc0.js"
   ]
-  "scripts": {
-  "start": "react-scripts start"
-}
 }
