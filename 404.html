@@ -1,8 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="refresh" content="0; URL=./index.html">
+  <meta charset="UTF-8">
+  <title>Page Not Found</title>
+  <script type="text/javascript">
+    // 현재 URL에서 경로를 추출하고, 이를 index.html에 전달합니다.
+    (function() {
+      var pathname = window.location.pathname;
+      var redirectTo = '/' + (pathname.startsWith('/') ? pathname.substring(1) : pathname);
+      // 기본 URL로 이동
+      window.location.replace('/?' + redirectTo);
+    })();
+  </script>
 </head>
 <body>
+  <h1>Page Not Found</h1>
+  <p>Redirecting...</p>
 </body>
 </html>
